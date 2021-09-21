@@ -1,0 +1,160 @@
+body{
+    font-family: Spartan, sans-serif;
+    background-color: #f0f5fa;
+}
+
+img{
+    max-width: 100%;
+}
+.container-fluid{
+    max-width: 1580px;
+}
+/* custom-btn */
+.custom-btn{
+    background-color: #0D6EFD;
+    color: white;
+    padding: 15px 30px;
+    position: relative;
+    border: 1px solid #0D6EFD;
+    z-index: 1;
+    transition: .4s;
+    overflow: hidden;
+}
+.custom-btn:hover{
+    color: white !important;
+}
+.custom-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0D6EFD;
+    border-radius: inherit;
+    z-index: -1;
+    transition: .4s;
+}
+.custom-btn:hover::before{
+    width: 100%;
+}
+/* header section */
+
+.header h1{
+    position: relative;
+}
+.header h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    height: 2.6px;
+    width: 11%;
+    background-color: #7191F0;
+}
+
+.header p{
+    font-size: 18px;
+    font-weight: 800;
+    opacity: .5;
+    margin: 20px 0px;
+}
+/* .single */
+
+.single .item{
+    background-color: white;
+    transition: .4s;
+    border-radius: 7px;
+}
+.single .item h4{
+    transition: .8s;
+    padding-top: 70px !important;
+}
+.single .item h1{
+    font-weight: 600;
+    transition: .8s;
+}
+.single .item h5{
+    font-weight: 600;
+    border-bottom: 2px solid rgba(221, 221, 221, 0.473);
+    width: 60%;
+    color: white;
+    margin: auto;
+    padding-bottom: 70px;
+    transition: .8s;
+}
+.single .item p{
+    font-size: 20px;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.single .item:hover{
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.single .item:hover button{
+    background-color: white;
+    color: #0D6EFD;
+}
+/* banre */
+.baner{
+    background: linear-gradient(#345ed2de,#345ed2e3), url(./image/free-bg.jpg), no-repeat center;
+    background-size: cover;
+    padding: 150px 0px;
+}
+
+.baner-text h2{
+    font-weight: 700;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.baner-text h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    height: 2px;
+    width: 11%;
+    background-color: #ffffff;
+}
+
+.baner-text p{
+    font-weight: 600;
+    margin-top: 25px;
+}
+.end-btn{
+    background-color: white;
+    color: #0D6EFD;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/* footer */
+.footer-left-text{
+    background-color: #3763EB;
+}
+.type-email{
+    width: 55%;
+}
+.subcribe-now{
+    background-color: transparent;
+    color: white;
+}
+/* footer-right */
+.footer-right h2{
+    font-weight: 600;
+    width: 90%;
+    opacity: .7;
+}
+
+.footer-right button{
+    margin-top: 120px;
+    font-size: 23px;
+    width: 39%;
+    padding: 11px 0px;
+    font-weight: 700;
+}
